@@ -9,12 +9,12 @@ Have you ever wanted to keep track of skin prices on BUFF marketplace without ma
 
 ### Tools/Technologies Used: <br/>
 <ul>
-  <li><a href="https://react.dev/" target="_blank">React.js</a></li>
-  <li><a href="https://expressjs.com/" target="_blank">Express.js</a></li>
-  <li><a href="https://www.selenium.dev/" target="_blank">Selenium</a></li>
-  <li><a href="https://docs.python.org/3/library/smtplib.html" target="_blank">SMTPlib</a></li>
-  <li><a href="https://pypi.org/project/python-dotenv/" target="_blank">python-dotenv</a></li>
-  <li><a href="https://pypi.org/project/webdriver-manager/" target="_blank">webdriver_manager/Chromedriver</a></li>
+  <li><a href="https://react.dev/">React.js</a></li>
+  <li><a href="https://expressjs.com/">Express.js</a></li>
+  <li><a href="https://www.selenium.dev/">Selenium</a></li>
+  <li><a href="https://docs.python.org/3/library/smtplib.html">SMTPlib</a></li>
+  <li><a href="https://pypi.org/project/python-dotenv/">python-dotenv</a></li>
+  <li><a href="https://pypi.org/project/webdriver-manager/">webdriver_manager/Chromedriver</a></li>
   <li><a href="https://aws.amazon.com/ec2/" target="_blank">AWS EC2</a></li>
 </ul>
 
