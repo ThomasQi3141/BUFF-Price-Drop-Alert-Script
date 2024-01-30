@@ -3,8 +3,6 @@
 Have you ever wanted to keep track of skin prices on BUFF marketplace without manually checking? Built using React, Express, Selenium, and SMTPlib, this app automatically web-scrapes BUFF marketplace, alerting you on the prices of your favourite skins through email. <br>
 
 
-<h3>Note: This README is outdated. However, the original script is still inside the "script" folder and would work with the current directions. </h3>
-
 ### Tools/Technologies Used: <br/>
 <ul>
   <li><a href="https://react.dev/">React.js</a></li>
@@ -31,3 +29,4 @@ Have you ever wanted to keep track of skin prices on BUFF marketplace without ma
 
 ### Troubleshooting: <br>
 **SMTP Errors:** These errors are mainly caused by your email service provider (for the email address that sends the automated emails). <a href="https://stackoverflow.com/questions/38602682/smtplib-smtpauthenticationerror-535-5-7-3-authentication-unsuccessful">This thread</a> may be helpful. 
+**Note:** The web scraper script can be found in the script folder.
