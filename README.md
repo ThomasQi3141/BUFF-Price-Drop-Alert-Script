@@ -1,12 +1,14 @@
-<h2>Price Drop Alert Bot</h2></br>
+<h2>BUFF Price Web Scraper</h2></br>
 
-Have you ever wanted to buy a skin through Netease BUFF marketplace but were limited by your budget? Built using Python, Selenium, and SMTPlib, this script automatically web-scrapes Netease BUFF marketplace and alerts you on the prices of your favourite skins through email.<br>
+Have you ever wanted to keep track of skin prices on BUFF marketplace without manually checking? Built using React, Express, Selenium, and SMTPlib, this app automatically web-scrapes BUFF marketplace, alerting you on the prices of your favourite skins through email. <br>
 
 
 <h3>Note: This README is outdated. However, the original script is still inside the "script" folder and would work with the current directions. </h3>
 
 ### Tools/Technologies Used: <br/>
 <ul>
+  <li><a href="https://react.dev/">React.js</a></li>
+  <li><a href="https://expressjs.com/">Express.js</a></li>
   <li><a href="https://www.selenium.dev/">Selenium</a></li>
   <li><a href="https://docs.python.org/3/library/smtplib.html">SMTPlib</a></li>
   <li><a href="https://pypi.org/project/python-dotenv/">python-dotenv</a></li>
@@ -14,19 +16,18 @@ Have you ever wanted to buy a skin through Netease BUFF marketplace but were lim
   <li><a href="https://aws.amazon.com/ec2/">AWS EC2</a></li>
 </ul>
 
-### How does this script work? <br/>
+###How does this app work?<br />
 
-➡️ The script opens an instance of the BUFF marketplace website using Selenium and Chromedriver<br/>
-➡️ By reusing cookies, the script effectively bypasses the 2FA authentication required for the BUFF Marketplace website<br/>
-➡️ Items and desired prices are then read from “items.txt” <br/>
-➡️ Each item is then searched and opened on BUFF marketplace. <br/>
-➡️ The price of the lowest listing of each item is then web-scraped. <br>
-➡️ If the price of the item is lower than the desired price, it is saved to “extracted_data.txt”<br/>
-➡️ main.py then runs send_email.py<br/>
-➡️ The automation email address is read from the .env file. Using SMTPlib, “send_email.py” automatically  sends an email to your personal email address. <br/>
-
+➡️ After entering items and clicking on get prices, the front-end sends an api request to the back-end<br />
+➡️ After receiving the API request, the back-end runs the Python script as a child process<br />
+➡️ The script opens an instance of the BUFF marketplace website using Selenium and Chromedriver ➡️ By reusing cookies, the script effectively bypasses the 2FA authentication required for the BUFF Marketplace website<br />
+➡️ The price of the lowest listing of each item is then web-scraped<br />
+➡️ The back-end relays the information back to the front-end, which is then displayed.<br />
+➡️ When the “Email Me” button is clicked, the front-end sends an api request to the back-end, running “send_email.py” as a child process<br />
+➡️ The automation email address is read from the .env file. Using SMTPlib, “send_email.py” automatically sends an email to your personal email address<br />
 
 
+<!--
 ### To Use:
 
 **Step 1: Download** <br>
@@ -59,6 +60,7 @@ On line 44 of send_email.py, replace the dummy text with your personal email (th
 
 **Step 7: Set up AWS EC2 instance** <br>
 Finish automating this process by setting up your own AWS EC2 instance! You may find <a href="https://praneeth-kandula.medium.com/launching-and-connecting-to-an-aws-ec2-instance-6678f660bbe6"> this guide</a> helpful. <br><br><br>
+-->
 
 
 
