@@ -1,4 +1,3 @@
-Prisma Case:3.49
-Fracture Case:1.89
-AK-47 | Phantom Disruptor (Factory New):55.38
-AWP | Black Nile (Field-Tested):7.45
+Fracture Case:1.64
+Prisma Case:2.92
+Desert Eagle | Bronze Deco (Factory New):3.56

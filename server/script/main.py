@@ -85,8 +85,6 @@ with open("items.txt", "r") as f:
         else:
             items.append(temp.split(":")[0][:-1])
 
-# print("Items retrieved successfully.\n")
-
 # Checks the price of each item
 list_of_cur_price = []
 for i in range(len(items)):
@@ -98,5 +96,3 @@ with open("extracted_data.txt", "w") as f:
     for i in range(len(list_of_cur_price)):
         f.write(items[i])
         f.write(":" + str(list_of_cur_price[i]) + "\n")
-
-# print("Data table generated successfully.\n")

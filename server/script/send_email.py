@@ -28,9 +28,9 @@ def send_email(subject, receiver_email):
     msg["From"] = formataddr(("BUFF Price Automation", f"{sender_email}"))
     msg["To"] = receiver_email
     msg["BCC"] = sender_email
-    with open("extracted_data.txt", "r") as f:
+    with open("./extracted_data.txt", "r") as f:
         msg.set_content(
-            "There are " + f.readline()[:-1] + "new items lower than desired price.\n: Item : Current Price : Desired Price :\n" + f.read()
+            "Item:Current Price\n" + f.read()
         )
     with smtplib.SMTP(EMAIL_SERVER, PORT) as server:
         server.starttls()
@@ -43,5 +43,3 @@ if __name__ == "__main__":
         subject="Price Update",
         receiver_email="thomaszhaojieqi@gmail.com",
     )
-
-print("Email sent successfully.\n")

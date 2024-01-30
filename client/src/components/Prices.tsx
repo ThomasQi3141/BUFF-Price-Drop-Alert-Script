@@ -9,7 +9,7 @@ function Prices({ pricesAndItems }: Props) {
       {pricesAndItems.length === 0 && <p>No Items Yet</p>}
       <ul className="list-group">
         {pricesAndItems.map((x) => (
-          <li key={x.item}>{x.item + " " + x.price}</li>
+          <li key={x.item}>{"• " + x.item + " " + x.price}</li>
         ))}
       </ul>
     </>

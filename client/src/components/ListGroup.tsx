@@ -10,8 +10,10 @@ function ListGroup({ items, removeItem }: Props) {
       <ul className="list-group">
         {items.map((item) => (
           <li key={item}>
-            {item}
-            <button onClick={() => removeItem(item)}>Remove</button>
+            {"• " + item}
+            <button onClick={() => removeItem(item)} className="remove-buttons">
+              Remove
+            </button>
           </li>
         ))}
       </ul>

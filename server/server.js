@@ -2,9 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
 const app = express();
-const { spawn } = require("child_process");
-const { resolve } = require("path");
-const { rejects } = require("assert");
+const { spawn, exec } = require("child_process");
 app.use(express.json());
 app.use(cors());
 
@@ -35,6 +33,7 @@ const executePython = async (script) => {
     return result;
 }
 
+
 app.post("/api", async (req, res) => {
     //Parse Json
     let itemString = "";
@@ -48,7 +47,7 @@ app.post("/api", async (req, res) => {
     });
 
     //Runs Selenium Python script
-    await executePython("script/main.py", []);
+    await executePython("script/main.py");
 
     //Reads extracted data from "extracted_data.txt"
     fs.readFile("extracted_data.txt", 'utf8', (err, data) => {
@@ -73,6 +72,14 @@ app.post("/api", async (req, res) => {
         console.log(items);
         console.log(prices);
       });
+})
+
+app.post("/email", async(req, res) => {
+    await executePython("script/send_email.py");
+    res.send(
+        {string: "Email sent successfully."}
+    );
+    console.log("Email sent successfully.");
 })
 
 

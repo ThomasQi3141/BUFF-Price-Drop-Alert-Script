@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import AddItem from "./components/AddItem";
 import ListGroup from "./components/ListGroup";
 import Prices from "./components/Prices";
@@ -53,20 +52,39 @@ function App() {
     }
   };
 
+  const sendEmail = async () => {
+    const response = await fetch("http://localhost:8000/email", {
+      method: "POST",
+    });
+    const data = await response.json();
+    console.log(data);
+  };
+
   return (
     <div>
       <h1>BUFF Price Tracker</h1>
       <AddItem receiveItem={receiveItem} />
       <h2>Tracking List</h2>
-      <button onClick={() => setItems([])}>Remove All</button>
+      <button onClick={() => setItems([])} className="buttons">
+        Remove All
+      </button>
       <ListGroup items={items} removeItem={removeItem} />
       <h2>Prices</h2>
       <button
         onClick={() => {
           fetchJSON();
         }}
+        className="buttons"
       >
         Get Prices
+      </button>
+      <button
+        className="buttons"
+        onClick={() => {
+          sendEmail();
+        }}
+      >
+        Email Me
       </button>
       <Prices pricesAndItems={pricesAndItems} />
     </div>
