@@ -16,7 +16,7 @@ Have you ever wanted to keep track of skin prices on BUFF marketplace without ma
   <li><a href="https://aws.amazon.com/ec2/">AWS EC2</a></li>
 </ul>
 
-###How does this app work?<br />
+### How does this app work?<br />
 
 ➡️ After entering items and clicking on get prices, the front-end sends an api request to the back-end hosted on AWS EC2<br />
 ➡️ After receiving the API request, the back-end runs the Python script as a child process<br />
@@ -25,7 +25,6 @@ Have you ever wanted to keep track of skin prices on BUFF marketplace without ma
 ➡️ The back-end relays the information back to the front-end, which is then displayed.<br />
 ➡️ When the “Email Me” button is clicked, the front-end sends an api request to the back-end, running “send_email.py” as a child process<br />
 ➡️ The automation email address is read from the .env file. Using SMTPlib, “send_email.py” automatically sends an email to your personal email address<br />
-
 
 
 
