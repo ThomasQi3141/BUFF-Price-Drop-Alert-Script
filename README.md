@@ -2,7 +2,8 @@
 
 Have you ever wanted to keep track of skin prices on BUFF marketplace without manually checking? Built using React, Express, Selenium, and SMTPlib, this app automatically web-scrapes BUFF marketplace, alerting you on the prices of your favourite skins through email. <br>
 
-### Demo:
+### Demo Video:
+[<img width="1512" alt="Screenshot 2024-01-30 at 3 53 35 PM" src="https://github.com/ThomasQi3141/BUFF-Price-Web-Scraper/assets/131242218/bfed9df6-b2d3-426e-8266-8712daf4487a" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
 
 
 
