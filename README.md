@@ -1,9 +1,11 @@
-<h2>BUFF Price Web Scraper</h2></br>
+![Screenshot 2024-01-30 at 3 53 35 PM](https://github.com/ThomasQi3141/BUFF-Price-Web-Scraper/assets/131242218/46a87d5b-5549-4edd-a3f8-6f8ed9f3dc54)<h2>BUFF Price Web Scraper</h2></br>
 
 Have you ever wanted to keep track of skin prices on BUFF marketplace without manually checking? Built using React, Express, Selenium, and SMTPlib, this app automatically web-scrapes BUFF marketplace, alerting you on the prices of your favourite skins through email. <br>
 
 ### Demo Video:
-[<img width="1512" alt="Screenshot 2024-01-30 at 3 53 35 PM" src="https://github.com/ThomasQi3141/BUFF-Price-Web-Scraper/assets/131242218/bfed9df6-b2d3-426e-8266-8712daf4487a" width="50%">](https://youtu.be/FJNyKdG10nA)
+[<img width="1512" alt="Screenshot 2024-01-30 at 3 53 35 PM" src="https://github.com/ThomasQi3141/BUFF-Price-Web-Scraper/assets/131242218/4ad633c2-6da8-4679-906a-0dfcaf8bdf76" width="50%">](https://youtu.be/FJNyKdG10nA)
+
+
 
 
 
