@@ -15,6 +15,7 @@ Have you ever wanted to keep track of skin prices on BUFF marketplace without ma
   <li><a href="https://pypi.org/project/python-dotenv/">python-dotenv</a></li>
   <li><a href="https://pypi.org/project/webdriver-manager/">webdriver_manager/Chromedriver</a></li>
   <li><a href="https://aws.amazon.com/ec2/" target="_blank">AWS EC2</a></li>
+  <li><a href="https://aws.amazon.com/amplify" target="_blank">AWS Amplify</a></li>
 </ul>
 
 ### How does this app work?<br />
